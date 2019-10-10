@@ -28,6 +28,9 @@ router.post("/api/burgers", function(req, res) {
 });
 
 router.put("/api/burgers/:id", function(req, res) {
+  console.log(" ")
+  console.log(" ")
+  console.log("----> req.body: " + JSON.stringify(req.body));
   var condition = "id = " + req.params.id;
 
   console.log("condition", condition);
@@ -39,6 +42,7 @@ router.put("/api/burgers/:id", function(req, res) {
       // If no rows were changed, then the ID must not exist, so 404
       return res.status(404).end();
     } else {
+      console.log("----> Success");
       res.status(200).end();
     }
   });
@@ -56,7 +60,7 @@ router.delete("/api/burgers/:id", function(req, res) {
     }
   });
 });
-//__________Get id Reults____________
+//__________Get id Results____________
 
 router.get("/api/burgers/:id", function(req, res) {
   console.log('get api_burgers_id');
