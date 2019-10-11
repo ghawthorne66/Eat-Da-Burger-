@@ -3,6 +3,10 @@ $(function() {
   $(".change-devoured").on("click", function(event) {
     var id = $(this).data("id");
     var newEatenStatus = $(this).data("newstatus");
+    
+
+    var toastHTML = '<span>Yum!</span>';
+    M.toast({ html: toastHTML, classes: 'rounded', displayLength: 1000 });
 
     var newDevouredState = {
       devoured: true
