@@ -2,7 +2,7 @@
 A Taco Eating Application With Node.js/Express/MySQL/Handlebars
 
 
-# Eat-Da-Taco
+# Tools
 
 This app uses Handlebars, MySQL, Node, Express, and a homemade ORM to create a taco logger. I followed the MVC design pattern and Node to Query the route data for the app. Handlebars was used to generate all of my HTML.
 
